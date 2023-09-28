@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Mooli&family=Roboto&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Sofia Sans', 'Mooli', 'Roboto', sans-serif;
+    font-size: 16px;
+
+    background-color: #363434;
+}
+h1 {
+    margin: 5px 0;
+}
+h3 {
+    margin-bottom: 15px;
+    text-align: center;
+}
+a {
+    color: #1e4646;
+    text-decoration: none;
+}
+a:hover {
+    color:#367e7e;
+}
+.container {
+    max-width: 1000px;
+    margin: auto;
+    margin-top: 10px;
+}
+.description {
+    font-size: 20px;
+}
+.card {
+    margin-bottom: 10px;
+    padding: 30px;
+    border-radius: 20px;
+    margin: 0 100px 10px;
+    color: #1e4646;
+}
+.card-0 {
+    display: flex;
+    align-items: center;
+    background-color: #B39F7A;
+    margin: 0 0 10px;
+}
+.img-box {
+    flex-shrink: 0;
+    margin-right: 2%;
+    border-radius: 30px;
+    box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.25);
+    max-width: 300px; /* ширина бокса */
+    max-height: 225px; /* высота бокса */
+    overflow: hidden; /* все что выходит за границы - скрываем */
+} 
+.img-avatar {
+    width: 100%;
+    height: 100%;
+    transition: 1s; /* для плавности анимации */
+}  
+.img-box:hover .img-avatar {
+    transform: scale(1.2); /* увеличиваем картинку при наведении */
+}
+.name-box {
+    color: #367e7e;
+    text-shadow: 1px 1px 1px #000;
+    margin-bottom: 5%;
+}
+.info-box {
+    width: fit-content;
+    background-color: rgb(206, 187, 145);
+    padding: 15px;
+    border-radius: 20px;
+}
+.card-1 {
+    background-color: #F9F8BB;
+}
+.card-1 table {
+    width: 100%;
+}
+.card-1 table th {
+    padding-bottom: 5px;
+}
+.card-1 table td {
+    word-break: break-all;
+    text-align: center;
+    background-color: #e2e19a
+}
+.card-1 table td:hover {
+    text-align: center;
+    background-color: #eeeda6
+}
+.card-2 {
+    background-color: #FAE7B5;
+}
+.card-2 ul li:nth-child(odd) {
+    background-color: #f0daa4;
+}
+.card-2 ul li:nth-child(even) {
+    background-color: #e4d09c;
+}
+.card-2 ul li:hover {
+    background-color: #fdebbe;
+}
+.card-3 {
+    background-color: #E5E4E2;
+}
+/*.card-4 {
+    background-color: #EAE0C8;
+}*/
+.form {
+    margin-bottom: 10px;
+    width: 48%;
+}
+.form input {
+    width: 100%;
+    box-sizing: border-box;
+}
+/*.form-50 {
+    width: 49.77%;
+    display: inline-block;
+    box-sizing: border-box;
+}
+.form-50 input {
+    width: 100%;
+    box-sizing: border-box;
+}*/
+.form-50 {
+    display: flex;
+    justify-content: space-between;
+}
+.form-100 {
+    margin-bottom: 10px;
+}
+.form-100 textarea {
+    width: 100%;
+    box-sizing: border-box;
+}
+.form label:hover {
+    color: #367e7e;
+    cursor: pointer;
+}
+.form-100 label:hover {
+    color: #367e7e;
+    cursor: pointer;
+}
+.btn {
+    border: none;
+    background-color: #363434;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 15px;
+    font-family: inherit;
+    cursor: pointer;
+    transition: all 0.1s;
+}
+.btn-form {
+    margin-left: 3px;
+}
+.btn:hover {
+    opacity: 0.9;
+    transform: scale(1.04);
+}
+
+  
+@media (max-width: 800px) {
+    .card-0 {
+        display: block;
+    }
+    .img-box {
+        margin: auto;
+    }
+    .name-box {
+        text-align: center;
+    }
+    .info-box {
+        margin: auto;
+    }
+}

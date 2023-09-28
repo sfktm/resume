@@ -1,77 +1,99 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="html, css">
     <meta name="description" content="Эта страница - резюме Пушкарева Виталия Олеговича">
     <title>Мое резюме</title>
+    <link href="https://fonts.googleapis.com/css2?family=Mooli&family=Roboto&family=Sofia+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <img src="img/Avatar.jpg" alt="Моя аватарка" width="500">
-    <h1>Виталий Пушкарев</h1>
-    <p>Я на данный момент работаю <b><i>старшим дознавателем</i></b> в МЧС, однако хочу стать <b><i>разработчиком</i></b>, ведь это интересно!</p>
-    <div>
-        <h3>Опыт работы:</h3>
-        <table>
-            <thead>
-                <tr>
-                    <th>Место работы</th>
-                    <th>Должность</th>
-                    <th>Опыт работы</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Молодая Камчатка</td>
-                    <td>Уборщик территорий</td>
-                    <td>2 месяца</td>
-                </tr>
-                <tr>
-                    <td>ФГБОУ ВО СПСА</td>
-                    <td>Курсант</td>
-                    <td>5 лет</td>
-                </tr>
-                <tr>
-                    <td>ФГКУ СУ ФПС № 79</td>
-                    <td>Старший дознаватель</td>
-                    <td>3 года</td>
-                </tr>
-            </tbody>
-        </table>
+    <div class="container">
+        <div class="card card-0">
+            <div class="img-box">
+                <img src="img/Avatar.jpg" alt="Моя аватарка" class="img-avatar">
+            </div>
+            <div class="info-name-box">
+                <div class="name-box">
+                    <h1>Виталий Пушкарев</h1>
+                    <p class="description">Я на данный момент работаю <b><i>старшим дознавателем</i></b> в МЧС, однако хочу стать <b><i>разработчиком,</i></b> ведь это интересно!</p>
+                </div>
+                <div class="info-box">
+                    <h3>Список социальных сетей:</h3>
+                    <a href="https://vk.com/sfktm" target="_blank">Вконтакте</a> |
+                    <a href="https://www.youtube.com/channel/UCE1QIfI8FV152bn1kN34gyQ" target="_blank">Youtube</a> |
+                    <a href="https://vk.com/sfktm" target="_blank">ВКонтакте</a>
+                </div>
+            </div>           
+        </div>
+        <div class="card card-1">
+            <h3>Опыт работы:</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Место работы</th>
+                        <th>Должность</th>
+                        <th>Опыт работы</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Молодая Камчатка</td>
+                        <td>Уборщик территорий</td>
+                        <td>2 месяца</td>
+                    </tr>
+                    <tr>
+                        <td>ФГБОУ ВО СПСА</td>
+                        <td>Курсант</td>
+                        <td>5 лет</td>
+                    </tr>
+                    <tr>
+                        <td>ФГКУ СУ ФПС № 79</td>
+                        <td>Старший дознаватель</td>
+                        <td>3 года</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="card card-2">
+            <h3>Мои хобби:</h3>
+            <ul class="list">
+                <li>Настольные игры</li>
+                <li>Теннис</li>
+                <li>Книги</li>
+                <li>Playstation 5</li>
+            </ul>
+        </div>
+<!----        <div class="card card-4">
+            <h3>Список социальных сетей:</h3>
+            <a href="https://vk.com/sfktm" target="_blank">Вконтакте</a> |
+            <a href="https://www.youtube.com/channel/UCE1QIfI8FV152bn1kN34gyQ" target="_blank">Youtube</a> |
+            <a href="https://vk.com/sfktm" target="_blank">ВКонтакте</a>
+        </div>     --->
+        <div class="card card-3">
+            <form action="">
+                <h3>Связаться со мной</h3>
+                <div class="form-50">
+                    <div class="form">
+                        <label for="text">Ваше имя:</label><br>
+                        <input type="text" id="text" placeholder="Введите имя">
+                    </div>
+                    <div class="form">
+                        <label for="email">Ваш email:</label><br>
+                        <input type="email" id="email" placeholder="Введите email">
+                    </div>
+                </div>
+                <div class="form-100">
+                    <label for="message">Ваше сообщение...</label><br>
+                    <textarea name="text" id="message" cols="30" rows="10" placeholder="Введите сообщение"></textarea>
+                </div>
+                <div>
+                    <button type="submit" class="btn btn-form">Отправить</button>
+                </div>
+            </form>
+        </div>
     </div>
-    <p>
-        <h3>Мои хобби:</h3>
-        <ul>
-            <li>Настольные игры</li>
-            <li>Теннис</li>
-            <li>Книги</li>
-            <li>Playstation 5</li>
-        </ul>
-    </p>
-    <div>
-        <h3>Список социальных сетей:</h3>
-        <a href="https://vk.com/sfktm" target="_blank">Вконтакте</a> |
-        <a href="https://www.youtube.com/channel/UCE1QIfI8FV152bn1kN34gyQ" target="_blank">Youtube</a> |
-        <a href="https://vk.com/sfktm" target="_blank">ВКонтакте</a>
-    </div>
-    <form action="">
-        <h3>Связаться со мной</h3>
-        <div>
-            <label for="text">Ваше имя:</label>
-            <input type="text" id="text" placeholder="Введите имя">
-        </div>
-        <div>
-            <label for="email">Ваш email:</label>
-            <input type="email" id="email" placeholder="Введите email">
-        </div>
-        <div>
-            <label for="message">Ваше сообщение...</label><br>
-            <textarea name="text" id="message" cols="30" rows="10" placeholder="Введите сообщение"></textarea>
-        </div>
-        <div>
-            <button type="submit">Отправить</button>
-        </div>
-    </form>
 </body>
 </html>
